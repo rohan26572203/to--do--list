@@ -1,0 +1,107 @@
+body {
+    margin: 0px;  
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar{
+    height: 60px;
+    display: flex;
+    gap: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
+}
+
+#navbar>a{
+    text-decoration: none;
+    padding: 7px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+#navbar>a:hover {
+    background-color: rgb(228, 226, 222);
+}
+
+#container {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputBox {
+    /* border: 1px solid rgb(179, 177, 177); */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 400px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+#inputBox>input, select, button{
+    height: 30px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#inputBox>h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+#mainBox {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainBox>table {
+    width: 700px;
+    border-collapse: collapse;
+}
+
+#mainBox>table th, td {
+    height: 30px;
+    text-align: center;
+}
+
+#mainBox button {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+#mainBox button[class="completedBtn"]:hover {
+    background-color: rgb(157, 169, 159);
+}
+
+#mainBox button[class="deleteBtn"]:hover {
+    background-color: rgb(209, 27, 27);
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+    #mainBox>table {
+        width: 600px;
+    }
+}
+
+@media (max-width: 400px) {
+    #inputBox {
+        min-width: 200px;
+    }
+    #mainBox>table {
+        width: 300px;
+    }
+}
+
